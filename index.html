@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPC Proof — what your site sends with Global Privacy Control on</title>
+<meta name="description" content="Factual Global Privacy Control (GPC) test reports for US e-commerce brands.">
+<style>body{font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a;max-width:760px;margin:0 auto;padding:32px 20px}h1{font-size:2rem;line-height:1.2}h2{margin-top:2.2em;font-size:1.3rem;border-top:1px solid #ddd;padding-top:1em}.stat{font-size:2.4rem;font-weight:700;color:#b42318}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ddd;padding:8px;text-align:left}small,.muted{color:#666}a{color:#1d4ed8}footer{margin-top:3em;border-top:1px solid #ddd;padding-top:1em;font-size:.9rem;color:#666}</style></head><body>
+<h1>GPC Proof</h1>
+<p><strong>Here's what your site sends with Global Privacy Control on.</strong> We run a controlled browser test of your store with GPC enabled and document, request by request, which ad pixels still fire and which identifiers they carry.</p>
+<h2>What is GPC?</h2>
+<p>Global Privacy Control is a browser signal (<code>Sec-GPC: 1</code> header and <code>navigator.globalPrivacyControl</code>) that tells a website the visitor opts out of the sale or sharing of their personal information. California (CCPA/CPRA) and several other US states treat it as a valid opt-out request for businesses that may be covered by those laws.</p>
+<h2>What we test</h2>
+<ul><li>A control visit and a GPC-on visit, using a clean Chromium browser from a US IP.</li><li>Your homepage and a product page.</li><li>Every network request to ad and analytics platforms (Meta, TikTok, Pinterest, Snap, Reddit, Criteo, Google, Microsoft and others).</li><li>Whether those requests carry user identifiers (e.g. Meta <code>fbp</code>/<code>external_id</code>, TikTok <code>_ttp</code>, Snap <code>u_c1</code>) and whether any limited-use flag is set.</li></ul>
+<h2>What we found in a random sample</h2>
+<p class="stat">66 of 196 (≈34%)</p>
+<p>Shopify-based stores in a random sample sent at least one ad-platform user identifier to a third party while GPC was on <span class="muted">(95% confidence interval roughly 27–41%)</span>.</p>
+<p class="muted"><small>Method: 200 sites drawn at random (seed 42) from Shopify stores in the Tranco top-sites list; 196 loaded successfully. Each was visited with and without GPC; a site counts only if a real user identifier was sent with GPC on. A Trade Desk cookie alone was not counted. Google and Microsoft tags were tallied separately. This is an observation of network traffic, not a legal conclusion.</small></p>
+<h2>What's in a proof pack</h2>
+<ul><li>A short PDF: which platforms fired with GPC on, which identifiers they carried, screenshots, timestamps.</li><li>The raw evidence: HAR files for the control and GPC runs, so your team or counsel can reproduce every finding.</li><li>Plain-language notes on which settings or consent-tool configuration usually control each pixel.</li></ul>
+<p>We describe what was observed. We do not provide legal advice or say whether your business is in violation of any law.</p>
+<h2>Pricing</h2>
+<table><tr><th>Proof pack</th><th>Price</th></tr><tr><td>Smaller brands</td><td>$350</td></tr><tr><td>Brands above the CCPA revenue threshold (~$26.6M)</td><td>$1,200</td></tr><tr><td>Optional quarterly re-test</td><td>$150 / quarter</td></tr></table>
+<p class="muted">Paid upfront by invoice (Wise, Payoneer or PayPal).</p>
+<h2>Contact</h2>
+<p><a href="mailto:hello@gpcproof.com">hello@gpcproof.com</a></p>
+<footer>GPC Proof is operated by Asaf Amzaleg, Israel. · <a href="privacy.html">Privacy</a><br>This site uses no cookies, analytics or trackers.</footer>
+</body></html>
